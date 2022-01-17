@@ -236,6 +236,14 @@ html {
   }
 }
 
+@media (max-width: 940px) {
+  .footer .social-media a {
+    border-bottom: 0px none #ffffff;
+    font-size: 25px;
+    width: 13px;
+  }
+}
+
 @media (max-width: 1024px) {
   .whoare .content {
     flex-direction: column;
