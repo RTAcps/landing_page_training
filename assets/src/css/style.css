@@ -92,7 +92,9 @@ html {
   filter: brightness(50%);
   height: 100%;
   min-width: 100%;
+  opacity: 0;
   position: absolute;
+  transition: opacity 1200ms;
   z-index: -1;
 }
 
@@ -106,6 +108,10 @@ html {
 
 .main .panels .project3 {
   background-image: url("../../img/painel3.jpg");
+}
+
+.main .panels .img-panel.show {
+  opacity: 1;
 }
 
 .main .panels .title {
