@@ -114,6 +114,10 @@ html {
   opacity: 1;
 }
 
+.main .panels .arrow.disabled {
+  opacity: 0.2;
+}
+
 .main .panels .title {
   color: #ffffff;
   font-size: calc(1em + 1vw);

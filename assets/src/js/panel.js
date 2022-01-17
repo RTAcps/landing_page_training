@@ -43,36 +43,35 @@ window.addEventListener("load", start);
 
 arrowForward.addEventListener("click", function () {
   const totalImages = imagesPanel.length - 1;
-  if (imageActual === totalImages) {
-    currentImageIndex = 0;
-    document.getElementById("btn-forward").style.opacity = 0.2;
-    btnBackShow();
-    return;
+  if (imageActual !== totalImages) {
+    imageActual++;
+    arrowBack.classList.remove("disabled");
   }
 
-  btnForwardShow();
-  btnBackShow();
-
-  imageActual++;
   time++;
 
   hideImage();
+
   showImage();
+
+  if (imageActual === totalImages) {
+    arrowForward.classList.add("disabled");
+  }
 });
 
 arrowBack.addEventListener("click", function () {
-  if (imageActual === 0) {
-    btnForwardShow();
-    document.getElementById("btn-back").style.opacity = 0.2;
-    return currentImageIndex[2];
+  if (imageActual !== 0) {
+    imageActual--;
+    arrowForward.classList.remove("disabled");
   }
 
-  btnForwardShow();
-  btnBackShow();
-
-  imageActual--;
   time++;
 
   hideImage();
+
   showImage();
+
+  if (imageActual === 0) {
+    arrowBack.classList.add("disabled");
+  }
 });
