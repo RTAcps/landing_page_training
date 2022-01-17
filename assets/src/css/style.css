@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;700&family=Public+Sans:wght@300;400;500;700;900&family=Roboto:wght@300;400;500;700&family=Work+Sans:ital,wght@0,300;0,700;1,300&display=swap");
+
+* {
+  box-sizing: border-box;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* header */
+.logo .img {
+  width: 100px;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 25px 0;
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+  text-transform: uppercase;
+}
+
+.logo .title {
+  font-size: 17px;
+  font-weight: 900;
+  margin-left: 7px;
+  transition: 0.3s ease-in-out;
+}
+
+.logo .title:hover {
+  color: #1ed760;
+}
+
+.header .navbar .menu {
+  display: flex;
+}
+
+.header .navbar .menu .item {
+  margin: 10px;
+}
+
+.header .navbar .menu .item a {
+  padding: 15px;
+  transition: 0.3s ease-in-out;
+}
+
+.header .navbar .menu .item a:hover {
+  background-color: #1ed760;
+  color: #ffffff;
+}
+
+/* main */
+/* Projects */
+.main .panels {
+  align-items: center;
+  display: flex;
+  height: 700px;
+  justify-content: center;
+  position: relative;
+}
+
+.main .panels .img-panel {
+  background: no-repeat center / cover;
+  filter: brightness(50%);
+  height: 100%;
+  min-width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.main .panels .project1 {
+  background-image: url("../../img/painel1.jpg");
+}
+
+.main .panels .project2 {
+  background-image: url("../../img/painel2.jpg");
+}
+
+.main .panels .project3 {
+  background-image: url("../../img/painel3.jpg");
+}
+
+.main .panels .title {
+  color: #ffffff;
+  font-size: calc(1em + 1vw);
+  text-transform: uppercase;
+}
+
+.main .panels .arrow {
+  background: center / contain no-repeat url("../../img/seta.png");
+  height: 50px;
+  overflow: hidden;
+  position: absolute;
+  text-indent: 100%;
+  width: 50px;
+}
+
+.main .panels .arrow.btn-back {
+  left: 20px;
+  transform: rotate(180deg);
+}
+
+.main .panels .arrow.btn-forward {
+  right: 20px;
+}
+
+/* Quem somos */
+.whoare {
+  background: #2941ab;
+}
+
+.whoare .content {
+  align-items: center;
+  display: flex;
+  padding: 0 10%;
+}
+
+.whoare .content .info {
+  width: 40%;
+}
+
+.whoare .content .info .title {
+  color: #1ed760;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.whoare .content .info .text {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.whoare .content .img {
+  width: 60%;
+}
+
+/* footer */
+.footer {
+  padding: 80px 0 20px;
+}
+
+.footer .nav {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.footer .social-media {
+  display: flex;
+}
+
+.footer .social-media a {
+  border-bottom: 1px solid #111111;
+  border-radius: 50%;
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+  margin: 0 10px;
+  padding: 15px;
+  transition: 0.3s ease-in-out;
+  width: 65px;
+}
+
+.footer .social-media a:hover {
+  background-color: #1ed760;
+}
+
+.footer .copyright {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.footer .nav .logo .img {
+  width: 100px;
+}
+
+@media (max-width: 624px) {
+  .header {
+    justify-content: center;
+  }
+  .header .logo {
+    margin-bottom: 30px;
+  }
+  .header .menu .item a {
+    font-size: calc(0.6em + 1vw);
+  }
+}
+
+@media (max-width: 900px) {
+  .main .panels {
+    height: 500px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .whoare .content {
+    flex-direction: column;
+    padding: 100px 30px;
+    text-align: center;
+  }
+
+  .whoare .content .info {
+    width: 100%;
+  }
+
+  .whoare .content .img {
+    display: none;
+  }
+}
+
+@media (max-width: 940px) {
+  .footer .nav {
+    justify-content: center;
+  }
+
+  .footer .nav .logo {
+    margin-bottom: 30px;
+  }
+
+  .footer .nav .logo,
+  .footer .nav .social-media {
+    justify-content: center;
+    width: 100%;
+  }
+}

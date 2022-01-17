@@ -13,7 +13,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/src/css/style.css" />
 
     <title>XPTO Agency</title>
   </head>
@@ -23,18 +23,20 @@
       <a href="#" class="logo">
         <img
           src="assets/img/cafe.gif"
+          class="img"
           alt="Logo animado da empresa fictícia XPTO Agency"
         />
+        <span class="title">XPTO Agency</span>
       </a>
-      <nav>
-        <ul>
+      <nav class="navbar">
+        <ul class="menu">
           <li class="item">
             <a href="#projects"> Projetos </a>
           </li>
-          <li lass="item">
+          <li class="item">
             <a href="#whoare"> Quem Somos </a>
           </li>
-          <li lass="item">
+          <li class="item">
             <a href="#contact"> Contato </a>
           </li>
         </ul>
@@ -47,6 +49,9 @@
         <div class="img-panel project1 show"></div>
         <div class="img-panel project2"></div>
         <div class="img-panel project3"></div>
+
+        <a href="#" id="btn-back" class="arrow btn-back">voltar</a>
+        <a href="#" id="btn-forward" class="arrow btn-forward">avançar</a>
       </section>
 
       <section class="whoare" id="whoare">
@@ -74,15 +79,19 @@
     <footer class="footer" id="contact">
       <nav class="nav">
         <a href="#" class="logo">
-          <img src="assets/img/cafe.gif" alt="Logo XPTO Agency" class="img" />
+          <img src="assets/img/cafe.gif" class="img" alt="Logo XPTO Agency" />
           <span class="title">XPTO Agency</span>
         </a>
 
         <div class="social-media">
+          <a href="#" class="social-media"><i class="fab fa-facebook"></i></a>
           <a href="#" class="social-media">
-            <i class="fab fa-facebook"></i>
             <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="social-media">
             <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="#" class="social-media">
             <i class="fab fa-github"></i>
           </a>
         </div>
